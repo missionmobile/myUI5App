@@ -1,12 +1,16 @@
- <mvc:View controllerName="com.myorg.myUIApp.controller.Master"
-  displayBlock="true"
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
-    <pages>
-      <Page title="{i18n>title}">
-        <content></content>
-      </Page>
-    </pages>
-  </App>
-</mvc:View>
+ <mvc:View controllerName="com.myorg.myUIApp.controller.Master" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+   <App id="idAppControl">
+     <pages>
+       <Page title="{i18n>title}">
+         <content>
+           <Button text="abc" />
+           <List items="{ServiceCollection}" >
+           <items>
+             <StandardListItem title="{Description}" />
+           </items>
+           </List>
+         </content>
+       </Page>
+     </pages>
+   </App>
+ </mvc:View>
