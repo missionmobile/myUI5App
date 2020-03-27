@@ -13,9 +13,10 @@ server:
       afterMiddleware: compression
       mountPath: /resources
       configuration:
-        rootPath: "../sapui5-1.60.18/resources"
+        rootPath: "./node_modules/sapui5-runtime/lib/resources"
     - name: ui5-middleware-simpleproxy
       afterMiddleware: compression
-      mountPath: /odata
+      mountPath: /sap/opu/odata
       configuration:
-        baseUri: "http://lehker:mind6463@157.97.109.244:8000"
+        baseUri: "http://157.97.109.244:8000/sap/opu/odata/"
+        client: "001"

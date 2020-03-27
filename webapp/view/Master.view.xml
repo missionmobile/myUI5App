@@ -4,7 +4,7 @@
        <Page title="{i18n>title}">
          <content>
            <Button text="abc" />
-           <List items="{ServiceCollection}" >
+           <List items="{/ServiceCollection}" >
            <items>
              <StandardListItem title="{Description}" />
            </items>
